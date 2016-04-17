@@ -1,4 +1,5 @@
 <?php
+//version 0.0.1
 // this one shows the total income, in one single graph, simple
 $sqlserver = 'localhost';
 $sqlusername = 'root';
@@ -60,9 +61,9 @@ if( 0 < $result->num_rows ){
 ?><!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
-	<script type="text/javascript">
-	  google.charts.load('current', {'packages':['corechart']});
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
@@ -97,7 +98,7 @@ if( 0 < $result->num_rows ){
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
-	</script>  
+  </script>  
 </head>
 <body>
    <div id="chart_div" style="width: 900px; height: 300px;"></div>

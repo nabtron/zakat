@@ -1,5 +1,5 @@
 <?php
-//version 0.0.1
+//version 0.0.1 
 // this one shows the total income, in one single graph, simple
 $sqlserver = 'localhost';
 $sqlusername = 'root';
